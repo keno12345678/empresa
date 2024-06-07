@@ -2,12 +2,18 @@
     <div class="container">
         <a class="navbar-brand" href="/" style="color:#777">
             <span style="font-size:15pt">&#9820;
-            </span> HOME </span>  || SERVICIOS  ||  PROYECTOS || CLIENTES || BLOG  || CONTACTO
+            </span>  <h1></a> Home || Servicios|| Proyectos || Clientes || Blog || Contacto </h1>
+
+
+
+
+
+
+
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         @if( true || Auth::check() )
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -35,5 +41,19 @@
                 </ul>
             </div>
         @endif
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item {{ Request::is('servicios') }}">
+                    <a class="nav-link" href="{{url('/servicios')}}">
+                        <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+                        servicios
+                    </a>
+                </li>
+
+
+
+
+        
     </div>
 </nav>

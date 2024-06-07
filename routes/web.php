@@ -22,3 +22,8 @@ Route :: get('/login', function(){
     Route :: get('/catalog/edit/{id}', function($id){
     return view ('catalog.edit',['id'=>$id]);
 });
+/*
+Route::get('/', function () {
+    return view('servicios');
+});
+*/
